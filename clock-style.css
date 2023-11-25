@@ -1,7 +1,6 @@
-
 html{
-    background: rgba(8, 8, 116, 0.842);
-    background-size: cover;
+    background: #504c88 url(background.jpg);
+    background-size: contain;
     font-family: 'helvetica neue';
     text-align: center;
     font-size: 10px;
@@ -19,13 +18,13 @@ body{
 .clock{
     width: 30rem;
     height: 30rem;
-    border: 20px solid white;
+    border: 20px solid rgb(87, 54, 80);
     border-radius: 50%;
     margin: 50px auto;
     padding: 2rem;
     box-shadow: 0 0 0 4px rgba(0,0,0,0.1), 
-    inset 0 0 0 3px #efefef,
-    inset 0 0 10px black
+    inset 0 0 0 3px lightpink,
+    inset 0 0 10px black,
     0 0 10px rgba(0,0,0,0.2);
 }
 
@@ -39,15 +38,14 @@ body{
 .hand{
     width: 50%;
     height: 6px;
-    background: rgb(0, 0, 2);
+    background: #504c88;
     position: absolute;
-    top: 45%;
-    left: 1%;
+    top: 50%;
     transform-origin: 100%;
     transform: rotate(90deg);
     transition: all .05s;
-    transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1);
-    box-shadow: 3px 3px 3px 3px rgba(53, 53, 53, .5);
+    transition-timing-function: cubic-bezier(0.1,2.7,0.58,1);
+    box-shadow: 3px 3px 3px 3px rgb(110, 127, 177);
 }
 
 .button{
@@ -57,8 +55,8 @@ body{
     top: 46%;
     left: 46%;
     border-radius: 50%;
-    background-color: black;
-    box-shadow: 3px 3px 3px 3px rgba(53, 53, 53, .5);
+    background-color: blueviolet;
+    box-shadow: 3px 3px 3px 3px rgb(110, 127, 177);
 }
 
 .hour-hand{
@@ -67,16 +65,17 @@ body{
 }
 
 .second-hand{
-    background: rgb(10, 10, 207);
+    background: #754c88;
 }
 
 .digital-clock{
     font-size: 12rem;
-    color: skyblue;
+    color: lightblue;
     width: 400px;
 }
 
 .time{
     padding-right: 20px;
-    text-shadow: 2px 2px 4px black;
+    text-shadow: 2px 2px 4px gray;
 }
+
